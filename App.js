@@ -15,6 +15,7 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
+import Beacons from 'react-native-beacons-manager';
 
 import {
   Header,
@@ -23,6 +24,8 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+
+Beacons.requestWhenInUseAuthorization();
 
 const App: () => React$Node = () => {
   return (
